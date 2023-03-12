@@ -105,7 +105,7 @@ section{ /* Each Section (Home, About, Projects, Contact) */
     color: rgb(187, 187, 187);
 }
 
-#home .appresentation h1{
+.home .appresentation h1{
     width: 100%;
     font-size: 75px;
     font-weight: bold;
@@ -114,20 +114,20 @@ section{ /* Each Section (Home, About, Projects, Contact) */
     text-align: center;
 }
 
-#home .appresentation h2{
+.home .appresentation h2{
     display: inline;
     font-size: 50px;
     text-transform: capitalize;
 }
 
-#home .appresentation h3{
+.home .appresentation h3{
     font-size: 25px;
     color: #d99037;
     text-transform: lowercase;
     text-align: right;
 }
 
-#home .appresentation .style-line{
+.home .appresentation .style-line{
     display: inline-block;
     width: 66%;
     height: 1vh;
@@ -136,11 +136,11 @@ section{ /* Each Section (Home, About, Projects, Contact) */
     background-color: #d99037;
 }
 
-#about{
+.about{
     flex-direction: row;
 }
 
-#about .text{ /* About Section - Text Aside */
+.about .text{ /* About Section - Text Aside */
     width: 60vw;
     height: 50vh;
     margin: 0 4vw 0 10vw;
@@ -151,11 +151,11 @@ section{ /* Each Section (Home, About, Projects, Contact) */
     line-height: 3.5vh;
 }
 
-#about .text p{
+.about .text p{
     margin-bottom: 2vh;
 }
 
-#about .graph{ /* About Section - Skill Graph */
+.about .graph{ /* About Section - Skill Graph */
     width: 35vw;
     height: 50vh;
     margin-right: 6vw;
@@ -165,7 +165,7 @@ section{ /* Each Section (Home, About, Projects, Contact) */
     padding: 2vw;
 }
 
-#about .graph h2{ /* Skill Graph - Title */
+.about .graph h2{ /* Skill Graph - Title */
     font-size: 4vw;
     text-transform: capitalize;
     margin-bottom: 2vh;
@@ -273,8 +273,57 @@ section{ /* Each Section (Home, About, Projects, Contact) */
     }
 }
 
-#projects{ /* Projects Section */
+.projects{ /* Projects Section */
+    
 }
 
-#contact{ /* Contact Section */
+
+.contact-card{
+    width: 40vw;
+    height: 80vh;
+    box-shadow: 0px 10px 30px 5px rgb(11, 11, 11);
+    border-radius: 20px;
+}
+
+.contact-card-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    height: 90%;
+    padding: 5% 10%;
+    padding-bottom: 0;
+}
+
+.contact-card h1{
+    position: relative;
+    top: 5vh;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 3em;
+}
+
+.contact-card-content button{
+    border: none;
+    color: #242526;
+    background-color: #d99037;
+    width: 30%;
+    margin: 0 auto;
+    margin-top: 10vh;
+    text-transform: lowercase;
+    font-weight: 300;
+    font-size: 1.5em;
+    padding: 2%;
+    border-radius: 10px;
+}
+
+.contact-card-content label{
+    text-transform: capitalize;
+}
+
+.contact-card-content input{
+    background-color: #242526;
+    margin-bottom: 5vh;
+    border: none;
+    border-bottom: 1px solid #d99037;
 }
