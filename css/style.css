@@ -1,0 +1,175 @@
+/*  COLOR PALETTE 
+*{
+    color: #1D2D50;
+    color: #133B5C;
+    color: #1E5F74;
+    color: #FCDAB7;
+}*/
+
+
+body{ /* Add Poppins font to the site */
+    font-family: "Poppins";
+}
+
+html{ /* Make scroll smoth, section transitions */
+    scroll-behavior: smooth;
+}
+
+header{ /* Header - gives space for the Navigation Menu */
+    width: 100vw;
+    height: 6vh;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    background-color: #242526;
+}
+
+header > a{
+    position: fixed;
+    margin: 2vh 2vw;
+}
+
+nav{ /* Navigation Menu */
+    width: 100%;
+    height: 6vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    margin-right: 20vw;
+}
+
+nav a{
+    text-decoration: none;
+    color: rgb(229, 229, 229);
+    font-weight: 1;
+    margin: 0 2%;
+}
+
+nav button{
+    margin-right: 2%;
+    border: 0;
+    background: none;
+}
+
+.source{ /* Information that has to be visible 100% of the time */
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 2.5vh;
+    margin-left: 2vw;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.source a{
+    margin: 0 auto;
+    margin-bottom: 2.5vh;
+}
+
+.source button{ /* Download CV button */
+    margin: 0 auto;
+    border-radius: 100%;
+    border: 0.135vw solid #d99037;
+    background-color: #242526;
+    cursor: pointer;
+}
+
+.source button img{
+    padding: 0.2vw;
+}
+
+.source a:last-child{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    
+    margin: 2vh 2vw;
+    border: 0;
+    border-radius: 100%;
+    background-color: #d99037;
+    cursor: pointer;
+}
+
+.source a:last-child img{
+    padding: 2vh;
+}
+
+section{ /* Each Section (Home, About, Projects, Contact) */
+    min-height: 100vh;
+    background-color: #242526;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgb(187, 187, 187);
+}
+
+#home .appresentation h1{
+    width: 100%;
+    font-size: 75px;
+    font-weight: bold;
+    margin: 20px 0;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#home .appresentation h2{
+    display: inline;
+    font-size: 50px;
+    text-transform: capitalize;
+}
+
+#home .appresentation h3{
+    font-size: 25px;
+    color: #d99037;
+    text-transform: lowercase;
+    text-align: right;
+}
+
+#home .appresentation .style-line{
+    display: inline-block;
+    width: 66%;
+    height: 1vh;
+    margin-left: 3vw;
+    margin-bottom: 1.2vh;
+    background-color: #d99037;
+}
+
+#about{
+    flex-direction: row;
+}
+
+#about .text{ /* About Section - Text Aside */
+    width: 45vw;
+    height: 50vh;
+    margin: 0 4vw 0 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2vw;
+    font-size: 1.5em;
+}
+
+#about .graph{ /* About Section - Skill Graph */
+    width: 35vw;
+    height: 50vh;
+    margin-right: 6vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2vw;
+    line-height: 6vh;
+}
+
+#about .graph h2{
+    font-size: 4vw;
+    text-transform: capitalize;
+    margin-bottom: 4vh;
+}
+
+#projects{ /* Projects Section */
+}
+
+#contact{ /* Contact Section */
+}
