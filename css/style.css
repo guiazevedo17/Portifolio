@@ -141,14 +141,18 @@ section{ /* Each Section (Home, About, Projects, Contact) */
 }
 
 #about .text{ /* About Section - Text Aside */
-    width: 45vw;
+    width: 60vw;
     height: 50vh;
     margin: 0 4vw 0 10vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 2vw;
-    font-size: 1.5em;
+    font-size: 1.4em;
+    line-height: 3.5vh;
+}
+
+#about .text p{
+    margin-bottom: 2vh;
 }
 
 #about .graph{ /* About Section - Skill Graph */
@@ -159,13 +163,114 @@ section{ /* Each Section (Home, About, Projects, Contact) */
     flex-direction: column;
     justify-content: center;
     padding: 2vw;
-    line-height: 6vh;
 }
 
-#about .graph h2{
+#about .graph h2{ /* Skill Graph - Title */
     font-size: 4vw;
     text-transform: capitalize;
-    margin-bottom: 4vh;
+    margin-bottom: 2vh;
+}
+
+.graph li{
+    display: flex;
+    flex-direction: row;
+}
+
+.graph li > span{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.graph li span span{
+    height: 1.5vh;
+    background-color: #d99037;
+    border-radius: 20px;
+}
+
+.html{
+    width: 55%;
+    animation: html 1s;
+}
+
+.css{
+    width: 75%;
+    animation: css 1s;
+}
+
+.javascript{
+    width: 15%;
+    animation: javascript 1s;
+}
+
+.kotlin{
+    width: 5%;
+    animation: kotlin 1s;
+}
+
+.java{
+    width: 65%;
+    animation: java 1s;
+}
+
+.c{
+    width: 45%;
+    animation: c 1s;
+}
+
+@keyframes html {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 55%;
+    }
+}
+
+@keyframes css {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 75%;
+    }
+}
+
+@keyframes javascript {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 15%;
+    }
+}
+
+@keyframes kotlin {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 5%;
+    }
+}
+
+@keyframes java {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 65%;
+    }
+}
+
+@keyframes c {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 45%;
+    }
 }
 
 #projects{ /* Projects Section */
