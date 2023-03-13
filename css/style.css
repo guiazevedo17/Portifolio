@@ -1,12 +1,3 @@
-/*  COLOR PALETTE 
-*{
-    color: #1D2D50;
-    color: #133B5C;
-    color: #1E5F74;
-    color: #FCDAB7;
-}*/
-
-
 body{ /* Add Poppins font to the site */
     font-family: "Poppins";
 }
@@ -115,6 +106,7 @@ section{ /* Each Section (Home, About, Projects, Contact) */
 }
 
 .home .appresentation h2{
+    width: 100%;
     display: inline;
     font-size: 50px;
     text-transform: capitalize;
@@ -129,10 +121,11 @@ section{ /* Each Section (Home, About, Projects, Contact) */
 
 .home .appresentation .style-line{
     display: inline-block;
-    width: 66%;
+    width: 67%;
     height: 1vh;
-    margin-left: 3vw;
+    margin-left: 4%;
     margin-bottom: 1.2vh;
+    text-align: right;
     background-color: #d99037;
 }
 
@@ -314,7 +307,7 @@ section{ /* Each Section (Home, About, Projects, Contact) */
     font-weight: 300;
     font-size: 1.5em;
     padding: 2%;
-    border-radius: 10px;
+    border-radius: 10PX;
 }
 
 .contact-card-content label{
