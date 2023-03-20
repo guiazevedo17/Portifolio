@@ -10,10 +10,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
+    <script src="https://kit.fontawesome.com/0f66c10956.js" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/style.css">
 
-    <title>Guilherme Azevedo</title>
+    <title>Guilherme Azevedo - Front-End Developer</title>
 </head>
 
 <body>
@@ -89,26 +91,85 @@
 
         <section id="projects" class="projects"><!-- Projects Section -->
 
-            
+            <div class="container"> <!-- Structure for the slider -->
+
+                <div class="slides">
+
+                    <div class="slide">
+
+                        <div class="project">
+
+                            <div class="img">
+                                <img src="../images/projects/Green Match.png" alt="">
+                            </div>
+
+                            <div class="content">
+                                <h3 class="name">Title</h3>
+                                <div class="languages">
+                                    <img src="../images/icons/html.png" alt="">
+                                    <img src="../images/icons/css.png" alt="">
+                                    <img src="../images/icons/js.png" alt="">
+                                </div>
+                                <p class="description">description</p>
+                            </div>
+
+                        </div>
+                        
+                    </div>
+
+                    <div class="slide">
+
+                        <div class="project">
+
+                            <div class="img">
+                                <img src="../images/projects/Green Match.png" alt="">
+                            </div>
+
+                            <div class="content">
+                                <h3 class="name">Title</h3>
+                                <div class="languages">
+                                    <img src="../images/icons/html.png" alt="">
+                                    <img src="../images/icons/css.png" alt="">
+                                    <img src="../images/icons/js.png" alt="">
+                                </div>
+                                <p class="description">description</p>
+                            </div>
+
+                        </div>
+                        
+                    </div>
+
+                </div>
+
+                <div class="slide-controls">
+                    <button id="prev-btn">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </button>
+                    <button id="next-btn">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+                </div>
+
+            </div>
 
         </section>
 
         <section id="contact" class="contact"><!-- Contact Section -->
-            
+
             <div class="contact-card">
                 <h1>contact</h1>
                 <div class="contact-card-content">
-                    
-    
+
+
                     <label for="name">your name</label>
                     <input type="text" name="name" id="name">
-    
+
                     <label for="email">your email</label>
                     <input type="email" name="email" id="email">
 
                     <label for="message">your message</label>
-                    <input type="text" name="message" id="message">    
-                    
+                    <input type="text" name="message" id="message">
+
                     <button class="send-contact-message">send</button>
                 </div>
             </div>
